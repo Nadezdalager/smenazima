@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Тайны Северного Королевства | Зимняя смена лагеря «Город Надежда»</title>
   <meta name="description" content="Зимняя ролевая смена лагеря «Город Надежда» для подростков 10–17 лет: сюжетная игра, творчество, приключения и командные испытания. Стоимость путёвки — 49 000 рублей.">
-  <link rel="canonical" href="https://nadezdazima.ru/">
+  <link rel="canonical" href="https://peru.ru/">
 
   <!-- Open Graph: превью ссылки в социальных сетях и мессенджерах -->
   <meta property="og:type" content="website">
@@ -13,15 +13,15 @@
   <meta property="og:site_name" content="Лагерь «Город Надежда»">
   <meta property="og:title" content="Тайны Северного Королевства — зимняя смена «Город Надежда»">
   <meta property="og:description" content="Зимняя ролевая смена для подростков 10–17 лет: творчество, приключения и командные испытания. Стоимость путёвки — 49 000 рублей.">
-  <meta property="og:url" content="https://nadezdazima.ru/">
-  <meta property="og:image" content="https://nadezdazima.ru/logo_nadejda.png">
+  <meta property="og:url" content="https://peru.ru/">
+  <meta property="og:image" content="https://peru.ru/logo_nadejda.png">
   <meta property="og:image:alt" content="Логотип лагеря «Город Надежда»">
 
   <!-- Twitter/X link preview -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Тайны Северного Королевства — зимняя смена «Город Надежда»">
   <meta name="twitter:description" content="Зимняя ролевая смена для подростков 10–17 лет. Стоимость путёвки — 49 000 рублей.">
-  <meta name="twitter:image" content="https://nadezdazima.ru/logo_nadejda.png">
+  <meta name="twitter:image" content="https://peru.ru/logo_nadejda.png">
 
   
   <!-- Единый шрифт всего проекта: Montserrat -->
@@ -1649,6 +1649,141 @@
         width: 100%;
       }
     }
+  
+    /* ДОПОЛНИТЕЛЬНАЯ АДАПТАЦИЯ «АКАДЕМИИ БУДУЩЕГО» ДЛЯ ТЕЛЕФОНОВ */
+    #academy {
+      scroll-margin-top: 84px;
+    }
+
+    #academy .academy-deck {
+      width: 100%;
+      min-width: 0;
+    }
+
+    #academy .academy-card {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #academy .academy-photo {
+      width: 100%;
+      height: 280px;
+      min-width: 0;
+    }
+
+    #academy .academy-photo img {
+      display: block;
+      max-width: none;
+    }
+
+    #academy .academy-card-content {
+      min-width: 0;
+    }
+
+    #academy .academy-card-content h3 {
+      overflow-wrap: anywhere;
+      word-break: normal;
+      line-height: 1.35;
+    }
+
+    @media (max-width: 768px) {
+      #academy {
+        padding: 52px 0;
+        scroll-margin-top: 76px;
+      }
+
+      #academy .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      #academy .sec-head {
+        margin-bottom: 26px;
+        padding: 0 4px;
+      }
+
+      #academy .sec-eyebrow {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+      }
+
+      #academy .sec-title {
+        font-size: clamp(25px, 7vw, 32px);
+        line-height: 1.18;
+        overflow-wrap: anywhere;
+      }
+
+      #academy .academy-deck {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        max-width: 480px;
+      }
+
+      #academy .academy-card {
+        width: 100%;
+        border-radius: 16px;
+      }
+
+      #academy .academy-photo {
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+
+      #academy .academy-photo img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #academy .academy-photo-placeholder {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        padding: 12px;
+      }
+
+      #academy .academy-photo-placeholder span {
+        font-size: 32px;
+      }
+
+      #academy .academy-card-content {
+        padding: 15px 16px 17px;
+      }
+
+      #academy .academy-card-content h3 {
+        margin: 0;
+        font-size: clamp(18px, 5vw, 21px);
+        line-height: 1.3;
+        text-align: center;
+        text-wrap: balance;
+      }
+    }
+
+    @media (max-width: 360px) {
+      #academy .container {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      #academy .academy-deck {
+        gap: 14px;
+      }
+
+      #academy .academy-card-content {
+        padding: 13px 10px 15px;
+      }
+
+      #academy .academy-card-content h3 {
+        font-size: 18px;
+      }
+    }
+
   </style>
 </head>
 <body>
